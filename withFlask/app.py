@@ -13,17 +13,17 @@ def introduction():
     Run the following command to grant/change role permission for user in GitLab repo/group:
 
     If you run locally, run this:
-    for group --->>
+    example for group--->>
     curl -X POST http://localhost:8080/chrole -H 'Content-Type: application/json' -d '{"username":"dany","group":"test-group", "role": "Guest"}'
     
-    for repo --->>
+    example for repo --->>
     curl -X POST http://localhost:8080/chrole -H 'Content-Type: application/json' -d '{"username":"dany","repo":"namespace/repo", "role": "Guest"}'
 
     If you run on host machine, run this:
-    for group --->>
+    example for group --->>
     curl -X POST http://<IP ADDRESS>:8080/chrole -H 'Content-Type: application/json' -d '{"username":"dany","group":"test-group", "role": "Guest"}'
 
-    for repo --->>
+    example for repo --->>
     curl -X POST http://<IP ADDRESS>:8080/chrole -H 'Content-Type: application/json' -d '{"username":"dany","repo":"namespace/repo", "role": "Guest"}'
 
     Available roles: 
@@ -38,17 +38,17 @@ def introduction():
     Run the following command to present the issues/merge request from some year, run this:
 
     If you run locally, run this:
-    for issues --->>
+    example for issues --->>
     curl -X POST http://localhost:8080/mr_issues -H 'Content-Type: application/json' -d '{"kind":"issues","year":"2024"}'
     
-    for merge request --->>
+    example for merge request --->>
     curl -X POST http://localhost:8080/mr_issues -H 'Content-Type: application/json' -d '{"kind":"mr","year":"2024"}'
 
     If you run on host machine, run this:
-    for issues --->>
+    example for issues --->>
     curl -X POST http://<IP ADDRESS>:8080/mr_issues -H 'Content-Type: application/json' -d '{"kind":"issues","year":"2024"}'
 
-    for merge request --->>
+    example for merge request --->>
     curl -X POST http://<IP ADDRESS>:8080/mr_issues -H 'Content-Type: application/json' -d '{"kind":"mr","year":"2024"}'
 
 
