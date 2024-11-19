@@ -4,6 +4,7 @@ import gitlab
 
 app = Flask(__name__)
 
+TOKEN = os.environ['GITLABTOKEN']
 
 roles_name = {
     "Guest": 10,
