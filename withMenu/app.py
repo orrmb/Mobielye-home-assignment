@@ -93,7 +93,7 @@ def user_per():
     if prompt_change in ['y', 'Y', 'yes', 'YES']:
         if '/' in repo_group:
             split_url = repo_group.split('/')
-            requests.put("https://gitlab.com/api/v4/projects/{}/members/{}?access_level={}"
+            requests.put("https://gitlab.com/api/v4/projects/{}%2F{}/members/{}?access_level={}"
                          .format(split_url[0], split_url[1], id_user, role_id), headers={'PRIVATE-TOKEN': TOKEN})
             print('The username {} is now {} in {}. '.format(username, roles_name[role_id], repo_group))
             menu()
