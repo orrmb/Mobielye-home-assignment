@@ -10,7 +10,7 @@ The code can be found in the `/withMenu` directory.
 
 This implementation features an interactive menu that allows users to select different actions from the terminal.
 
-![Interactive Menu](Pics/image-1.png)
+![Interactive Menu](image-1.png)
 
 ---
 
@@ -20,4 +20,4 @@ The code for the Flask web server can be found in the `/withFlask` directory.
 
 This implementation exposes a web service using Flask. The service handles role management and issue/merge request retrieval via HTTP endpoints.
 
-![Flask Web Server](Pics/image-2.png)
+![Flask Web Server](image-2.png)
